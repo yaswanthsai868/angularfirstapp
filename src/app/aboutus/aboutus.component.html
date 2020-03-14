@@ -1,0 +1,21 @@
+<div class="text-center">
+    <h1 style="color: snow;">About Us</h1>
+</div>
+<div class="container bg-light">
+    <table class="table table-bordered">
+        <thead>
+            <th>Id</th>
+            <th>Email</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>avatar</th>
+        </thead>
+        <tr *ngFor="let n of dataArray.data">
+            <td>{{n.id}}</td>
+            <td>{{n.email}}</td>
+            <td>{{n.first_name}}</td>
+            <td>{{n.last_name}}</td>
+            <td><img [src]="n.avatar" alt="avatar"></td>
+        </tr>
+    </table>
+</div>
